@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ehliyet Sınavı Hazırlık — Gizlilik Politikası & Kullanım Koşulları</title>
+  <meta name="description" content="Ehliyet Sınavı Hazırlık mobil uygulaması resmî Gizlilik Politikası ve Kullanım Koşulları sayfası.">
+  <link rel="icon" type="image/png" href="../../assets/images/favicon.png">
+  <style>
+    :root {
+      --bg: #0B1220;
+      --card: #131D2E;
+      --border: #243247;
+      --primary: #2563EB;
+      --primary-hover: #1D4ED8;
+      --accent: #38BDF8;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --success: #10B981;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(180deg, #13203C 0%, #0B1220 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 20px 30px;
+      text-align: center;
+    }
+    .brand-box {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(37, 99, 235, 0.45);
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    .slogan {
+      color: var(--accent);
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 30px 20px 80px;
+    }
+    .nav-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 30px;
+    }
+    .tab-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 10px 24px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .tab-btn.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #FFFFFF;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    }
+    .content-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 36px 32px;
+      box-shadow: 0 12px 36px rgba(0, 0, 0, 0.25);
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .section-title:first-child {
+      margin-top: 0;
+    }
+    p {
+      color: var(--text-muted);
+      font-size: 15px;
+      margin-bottom: 16px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 24px;
+      margin-bottom: 18px;
+      color: var(--text-muted);
+      font-size: 15px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    strong {
+      color: var(--text);
+    }
+    .alert-box {
+      background: rgba(37, 99, 235, 0.12);
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .alert-box p {
+      margin: 0;
+      color: #E2E8F0;
+      font-size: 14px;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: var(--success);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: var(--text-muted);
+      font-size: 13px;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    @media (max-width: 640px) {
+      .content-card {
+        padding: 24px 20px;
+        border-radius: 16px;
+      }
+      h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand-box">
+      <img src="../../assets/images/icon.png" alt="Ehliyet Sınavı Hazırlık Logo" class="brand-icon">
+      <h1>Ehliyet Sınavı Hazırlık</h1>
+      <p class="slogan">MEB e-Sınavına İlk Girişte Kazan!</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="nav-tabs">
+      <button class="tab-btn active" id="btn-privacy" onclick="switchTab('privacy')">Gizlilik Politikası</button>
+      <button class="tab-btn" id="btn-terms" onclick="switchTab('terms')">Kullanım Koşulları</button>
+    </div>
+
+    <!-- GİZLİLİK POLİTİKASI -->
+    <div id="tab-privacy" class="content-card">
+      <div class="badge">KVKK & GDPR UYUMLU</div>
+      <h2 style="font-size: 24px; margin-bottom: 8px;">Gizlilik Politikası</h2>
+      <p style="font-size: 13px; color: #64748B;">Son Güncelleme: 9 Kasım 2026</p>
+
+      <div class="alert-box">
+        <p><strong>Özet İlke:</strong> Ehliyet Sınavı Hazırlık kullanıcı hesabı gerektirmez. Çözdüğünüz sorular, deneme sınavı sonuçlarınız ve çalışma verileriniz <strong>yalnızca kendi cihazınızda (yerel SQLite veritabanında)</strong> saklanır. Verileriniz üçüncü kişilere satılmaz veya ticari amaçla işlenmez.</p>
+      </div>
+
+      <h3 class="section-title">1. Toplanan Bilgiler ve Saklama</h3>
+      <p><strong>A. Cihazda Saklanan Veriler (Local Data):</strong></p>
+      <ul>
+        <li><strong>Deneme & Sınav Geçmişi:</strong> 50 soruluk denemelerde verdiğiniz yanıtlar, doğru/yanlış sayıları, puanlar ve tamamlama süreleri.</li>
+        <li><strong>Aralıklı Tekrar (SRS) Havuzu:</strong> Hatalı veya boş bıraktığınız sorular, soru tekrar aralıkları.</li>
+        <li><strong>Kişisel Tercihler:</strong> Günlük hedef sayısı ve hatırlatıcı saat tercihiniz.</li>
+      </ul>
+      <p>Bu veriler harici bir sunucuya aktarılmaz; uygulamayı sildiğinizde cihazınızdan tamamen silinir.</p>
+
+      <p><strong>B. Otomatik Anonim Teknik Bilgiler:</strong></p>
+      <ul>
+        <li><strong>Hata ve Çökme Raporlama (Sentry):</strong> Beklenmeyen çökme ve istisnaları tespit edip gidermek için cihaz modeli, işletim sistemi sürümü ve hata yığını toplanır. Kişisel kimlik veya soru içerikleri kesinlikle yer almaz.</li>
+        <li><strong>Anonim Kullanım Analitiği (İsteğe Bağlı):</strong> Ayarlar ekranında açıkça izin verdiğiniz takdirde anonim olaylar kaydedilir; varsayılan olarak kapalıdır.</li>
+        <li><strong>Uygulama İçi Satın Alma:</strong> Tek seferlik ömür boyu Premium satın alımı Apple ve Google güvencesiyle yürütülür; kredi kartı bilgileriniz geliştiriciye asla iletilmez.</li>
+        <li><strong>Reklamlar (Google AdMob):</strong> Ücretsiz kullanıcılara otomotiv ve sürücü odaklı reklamlar gösterilir. Reklam kimliği kullanımı kullanıcının iznine bağlıdır. Premium üyelerde tüm reklamlar kalıcı olarak kaldırılır.</li>
+      </ul>
+
+      <h3 class="section-title">2. Kullanıcı Hakları (KVKK & GDPR)</h3>
+      <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ve GDPR uyarınca kullanıcılar; verilerinin nerede saklandığını öğrenme, ayarlar menüsünden kullanım izinlerini kapatma ve uygulamayı cihazdan kaldırarak tüm yerel çalışma verilerini anında silme hakkına sahiptir.</p>
+
+      <h3 class="section-title">3. İletişim ve Veri Sorumlusu</h3>
+      <p>Gizlilik haklarınız veya uygulamanın veri güvenliği ile ilgili sorularınız için bizimle doğrudan iletişime geçebilirsiniz:</p>
+      <p><strong>E-posta:</strong> <a href="mailto:abdllhcrk@gmail.com" style="color: var(--accent);">abdllhcrk@gmail.com</a></p>
+    </div>
+
+    <!-- KULLANIM KOŞULLARI -->
+    <div id="tab-terms" class="content-card" style="display: none;">
+      <h2 style="font-size: 24px; margin-bottom: 8px;">Kullanım Koşulları</h2>
+      <p style="font-size: 13px; color: #64748B;">Son Güncelleme: 9 Kasım 2026</p>
+
+      <div class="alert-box">
+        <p><strong>Bilgilendirme:</strong> Ehliyet Sınavı Hazırlık bağımsız bir eğitim yazılımıdır. Millî Eğitim Bakanlığı (MEB) veya Emniyet Genel Müdürlüğü ile resmî bir kurumsal ortaklığı bulunmamaktadır.</p>
+      </div>
+
+      <h3 class="section-title">1. Hizmetin Kullanımı</h3>
+      <p>Uygulama, sürücü kursu e-sınavına hazırlanan adayların sınav pratiklerini artırmak ve eksiklerini gidermek amacıyla sunulmuştur. Sorular kamuya açık resmî e-sınav müfredatı ve örnek denemeler temel alınarak eğitim amacıyla derlenmiştir.</p>
+
+      <h3 class="section-title">2. Premium Satın Alma ve İadeler</h3>
+      <ul>
+        <li><strong>Tek Seferlik Ödeme:</strong> Ömür boyu Premium tek seferlik ödemeyle açılır; yinelenen abonelik ücreti bulunmaz.</li>
+        <li><strong>Geri Yükleme (Restore):</strong> Cihaz değiştirdiğinizde aynı Apple veya Google hesabınızla "Satın Almaları Geri Yükle" seçeneğini kullanarak Premium haklarınızı ücretsiz geri yükleyebilirsiniz.</li>
+        <li><strong>İade Koşulları:</strong> İadeler Apple App Store ve Google Play Store'un kendi standart tüketici iade politikalarına tabidir.</li>
+      </ul>
+
+      <h3 class="section-title">3. Fikrî Mülkiyet</h3>
+      <p>Uygulama kodları, tasarımı, arayüz grafikleri ve algoritmaları fikrî mülkiyet yasalarıyla korunmaktadır. İzin alınmaksızın kopyalanamaz veya ticari amaçla dağıtılamaz.</p>
+
+      <h3 class="section-title">4. İletişim</h3>
+      <p>Kullanım şartlarıyla ilgili destek ve sorularınız için: <a href="mailto:abdllhcrk@gmail.com" style="color: var(--accent);">abdllhcrk@gmail.com</a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Ehliyet Sınavı Hazırlık. Tüm hakları saklıdır.</p>
+    <p style="margin-top: 6px;"><a href="mailto:abdllhcrk@gmail.com">abdllhcrk@gmail.com</a></p>
+  </footer>
+
+  <script>
+    function switchTab(tab) {
+      const pTab = document.getElementById('tab-privacy');
+      const tTab = document.getElementById('tab-terms');
+      const pBtn = document.getElementById('btn-privacy');
+      const tBtn = document.getElementById('btn-terms');
+
+      if (tab === 'privacy') {
+        pTab.style.display = 'block';
+        tTab.style.display = 'none';
+        pBtn.classList.add('active');
+        tBtn.classList.remove('active');
+      } else {
+        pTab.style.display = 'none';
+        tTab.style.display = 'block';
+        tBtn.classList.add('active');
+        pBtn.classList.remove('active');
+      }
+    }
+  </script>
+</body>
+</html>
